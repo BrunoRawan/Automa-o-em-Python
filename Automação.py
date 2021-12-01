@@ -1,0 +1,63 @@
+import pyautogui
+from time import sleep
+
+print('Digite a Data de Agendamento\n')
+de = str(input('De: '))
+ate = str(input('Até: '))
+unidade = str(input('Digite a unidade: '))
+
+pyautogui.alert('Deseja iniciar a Automação?\n(NÃO MEXA NO COMPUTADOR DURANTE A AUTOMAÇÃO!')
+pyautogui.PAUSE = 2
+pyautogui.press('win')
+pyautogui.PAUSE = 2
+pyautogui.write('Chrome')
+pyautogui.PAUSE = 2
+pyautogui.press('enter')
+pyautogui.PAUSE = 2
+pyautogui.click(1280, 469)
+pyautogui.PAUSE = 2
+pyautogui.click(662, 100)
+pyautogui.PAUSE = 2
+pyautogui.click(86, 465)
+pyautogui.PAUSE = 2
+pyautogui.press('backspace')
+pyautogui.write('br131330@gmail.com')
+sleep(2)
+pyautogui.click(329, 574)
+pyautogui.hotkey('ctrl', 'a')
+sleep(2)
+pyautogui.press('backspace')
+sleep(2)
+pyautogui.write('Br@202019')
+sleep(2)
+pyautogui.click(550, 730)
+sleep(2)
+pyautogui.click(733, 527)
+sleep(2)
+pyautogui.click(1666, 224)
+sleep(2)
+pyautogui.click(1553, 393)
+sleep(2)
+pyautogui.write(f'{de}')
+sleep(2)
+pyautogui.write(f'{ate}')
+sleep(2)
+pyautogui.click(1485, 552)
+sleep(2)
+pyautogui.click(1485, 552)
+sleep(2)
+pyautogui.write(f'{unidade}')
+sleep(2)
+pyautogui.click(1618, 613)
+sleep(2)
+pyautogui.click(1547, 270)
+sleep(8)
+pyautogui.click(1824, 231)
+sleep(2)
+pyautogui.click(1562, 191)
+sleep(2)
+pyautogui.click(1496, 250)
+sleep(2)
+pyautogui.click(1407, 893)
+sleep(2)
+pyautogui.click(815, 892)
